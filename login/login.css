@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: rgb(191, 208, 206);
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.userEntry {
+    background-color: rgb(232, 189, 176);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button, input {
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #E8BDB0;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <script src="../main.js"></script>
+    <script src="game.js"></script>
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    <header>
+        <button id="backButton" onclick="backPage()">Exit</button>
+        <h1 id="welcome">Welcome, </h1>
+    </header>
+    <main>
+        <div class="gamePlay">
+            <div class="value">
+                <p>Your current FizzBuzz value is:</p>
+                <p id="fizzBuzzValue"></p>
+            </div>
+            <button onclick="game()">Click to increment</button>
+        </div>
+    </main>
+</body>
+</html>
