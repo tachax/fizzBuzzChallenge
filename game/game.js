@@ -64,5 +64,5 @@ function fizzBuzzNumber(number) {
 }
 
 function backPage() {
-    location.href = '../login/login.html';
+    location.href = '../index.html';
 }
