@@ -7,12 +7,15 @@ function verifyUser() {
 
     get(url).then(function (response) {
 
-        if (response.status != 200) {
-            post(url, { score: 0 }); //create a new user.
+        if (response.status == 200) {
+            location.href = '../game/game.html'; //change page if user already exists
+        } else {
+            post(url, { score: 0 }).then(response => {
+                if (response.status === 201) { //if the creation was succesful, then change page
+                    location.href = '../game/game.html';
+                }
+            })
         }
-        
-        location.href = '../game/game.html';
-        localStorage.setItem('score', score);
-    });
-    
+
+    })
 }
